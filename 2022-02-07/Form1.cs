@@ -29,7 +29,23 @@ namespace _2022_02_07
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (textBox1.Text == "") 
+            {
+                MessageBox.Show("Nem lehet üres a doboz :-)");
+            }
+            else
+            {
+                int tryparse = 0;
+                bool isNumber = int.TryParse(textBox1.Text, out tryparse);
+                if (isNumber == true)
+                {
+                    MessageBox.Show($"{DateTime.Now.Year - int.Parse(textBox1.Text)} éves vagy.");
+                }
+                else
+                {
+                    MessageBox.Show("Hiba. Számot kellene beírni.");
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
