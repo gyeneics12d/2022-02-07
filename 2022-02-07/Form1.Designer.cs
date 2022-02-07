@@ -71,6 +71,7 @@ namespace _2022_02_07
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Eredmény:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 

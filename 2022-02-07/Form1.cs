@@ -39,7 +39,7 @@ namespace _2022_02_07
                 bool isNumber = int.TryParse(textBox1.Text, out tryparse);
                 if (isNumber == true)
                 {
-                    MessageBox.Show($"{DateTime.Now.Year - int.Parse(textBox1.Text)} éves vagy.");
+                    label2.Text = $"Eredmény: {DateTime.Now.Year - int.Parse(textBox1.Text)} éves vagy.";
                 }
                 else
                 {
@@ -51,6 +51,11 @@ namespace _2022_02_07
         private void Form1_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
