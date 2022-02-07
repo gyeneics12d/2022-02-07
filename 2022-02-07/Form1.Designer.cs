@@ -62,6 +62,8 @@ namespace _2022_02_07
             this.button1.Text = "Életkor kiszámítása.";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // label2
             // 

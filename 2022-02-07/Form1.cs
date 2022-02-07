@@ -19,17 +19,18 @@ namespace _2022_02_07
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "") 
+            if (textBox1.Text == "")
             {
                 MessageBox.Show("Nem lehet üres a doboz :-)");
             }
@@ -56,6 +57,16 @@ namespace _2022_02_07
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.LightSkyBlue;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = SystemColors.Control;
         }
     }
 }
